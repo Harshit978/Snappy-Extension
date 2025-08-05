@@ -1,4 +1,4 @@
-# 📸 Snap Doc — Screenshot Collator
+# 📸 Snappy Extension — Screenshot Collator
 
 A powerful Chrome extension that allows you to capture multiple screenshots and export them into a single, professional Word document. 
 Perfect for creating documentation, test reports, tutorials, and visual guides.
@@ -70,7 +70,7 @@ Perfect for creating documentation, test reports, tutorials, and visual guides.
 ### Project Structure
 
 ```
-snap-doc-extension/
+snappy-extension/
 ├── manifest.json          # Extension configuration
 ├── background/
 │   └── background.js      # Service worker for screenshot capture
