@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snappy</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>📸 Snap Doc</h1>
+
+      <div class="controls">
+        <button id="capture-btn">Take Screenshot</button>
+        <button id="clear-all-btn" disabled>Clear All</button>
+        <span id="counter">0 screenshots</span>
+      </div>
+
+      <section id="thumbs"></section>
+
+      <div class="export-section">
+        <div class="export-settings">
+          <label for="document-title">Document Title:</label>
+          <input type="text" id="document-title" value="Test Run Snapshots" placeholder="Enter document title">
+
+          <label for="image-size">Image Size:</label>
+          <select id="image-size">
+            <option value="small">Small (300x200)</option>
+            <option value="medium" selected>Medium (500x300)</option>
+            <option value="large">Large (700x450)</option>
+          </select>
+        </div>
+
+        <button id="export-btn" disabled>Export DOCX</button>
+      </div>
+    </main>
+
+    <!-- docx.js from local libs -->
+    <script src="libs/docx.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
